@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1342169541}
-  _movementSpeedMultiplier: 300
+  _movementSpeedMultiplier: 200
 --- !u!136 &1342169543
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Root: {fileID: 1541015145}
   m_UpdateRate: 60
-  m_UpdateMode: 1
+  m_UpdateMode: 3
   m_Damping: 0.4
   m_DampingDistrib:
     serializedVersion: 2
