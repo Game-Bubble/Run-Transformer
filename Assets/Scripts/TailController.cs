@@ -1,49 +1,52 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
-using UnityEngine.Timeline;
 
 public class TailController : MonoBehaviour
 {
-	[SerializeField] TailPiece _tailPiecePrefab;
-	[SerializeField] PlayableDirector _directorPrefab;
+	TailPiece[] _tailPieces;
+	int TailCount => _tailPieces.Length;
 
-	List<TailPiece> _tailPieces = new List<TailPiece>();
-	int TailCount => _tailPieces.Count;
+	void Awake()
+	{
+		_tailPieces = GetComponentsInChildren<TailPiece>();
+
+		for (int i = 0; i < _tailPieces.Length; i++)
+		{
+			TailPiece tailPiece = _tailPieces[i];
+			tailPiece.Initialize(OnTailPieceTakingHit, i);
+		}
+	}
 
 	public void OnTailPiecePicking()
 	{
 		SetupAndPlayTailFormingSequence();
 	}
 	
-	public void RemoveTailFromIndex(int index)
+	void OnTailPieceTakingHit(int x)
 	{
-		for (int i = 0; i < _tailPieces.Count; i++)
+		RemoveTailFromIndex(x);
+	}
+	
+	void RemoveTailFromIndex(int index)
+	{
+		for (int i = 0; i < _tailPieces.Length; i++)
 		{
 			if (i >= index)
 			{
-				_tailPieces.RemoveAt(i);
+				_tailPieces[i].gameObject.SetActive(false);
 			}
 		}
 	}
 	
 	void SetupAndPlayTailFormingSequence()
 	{
-		Vector3 nextTailPiecePosition = transform.position + Vector3.forward * (TailCount * -_tailPiecePrefab.zLength);
-		TailPiece instantiatedTailPiece = Instantiate(_tailPiecePrefab, nextTailPiecePosition, Quaternion.identity);
-		_tailPieces.Add(instantiatedTailPiece);
-		
-		// prepare timeline for vfx
-		PlayableDirector director = Instantiate(_directorPrefab);
-		director.GetComponent<TailPieceTimelineEventHandler>().Initialize(instantiatedTailPiece);
-
-		foreach (PlayableBinding playableAssetOutput in director.playableAsset.outputs)
+		for (int i = 0; i < TailCount; i++)
 		{
-			TrackAsset track = (TrackAsset)playableAssetOutput.sourceObject;
-			director.SetGenericBinding(track, instantiatedTailPiece);
+			if (!_tailPieces[i].gameObject.activeSelf)
+			{
+				_tailPieces[i].gameObject.SetActive(true);
+				_tailPieces[i].PlayVFXSequence();
+				return;
+			}
 		}
-		
-		// actual playing...
-		director.Play();
 	}
 }

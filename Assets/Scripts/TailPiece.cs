@@ -1,20 +1,30 @@
+using System;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class TailPiece : MonoBehaviour
 {
-	public float zLength;
+	[SerializeField] PlayableDirector _playableDirector;
 	
-	TailController _tailController;
+	Action<int> _tailPieceTakingHit;
+	
 	int _index;
 
-	public void Initialize(TailController tailController)
+	public void Initialize(Action<int> onTailPieceTakingHit, int index)
 	{
-		_tailController = tailController;
+		_tailPieceTakingHit = onTailPieceTakingHit;
+		_index = index;
+		gameObject.SetActive(false);
 	}
 	
 	public void TakeHit()
 	{
 		// let tailController know that I take hit
-		_tailController.RemoveTailFromIndex(_index);
+		_tailPieceTakingHit.Invoke(_index);
+	}
+
+	public void PlayVFXSequence()
+	{
+		_playableDirector.Play();
 	}
 }
