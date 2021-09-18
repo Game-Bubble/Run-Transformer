@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
+	[SerializeField] Rigidbody _rigidbody;
 	[SerializeField] float _sideMoveSpeedMultiplier;
 	[SerializeField] float _forwardMoveSpeed;
 
 	float _lastFrameMousePosX;
 	float _valueToApply;
 	bool _didLastFrameClick;
-	
+	bool _shouldApplyForce;
+
 	public void OnTouchPressUp()
 	{
 		_didLastFrameClick = false;
+		_shouldApplyForce = false;
 	}
 
 	public void OnTouchPress()
@@ -23,15 +26,24 @@ public class MovementController : MonoBehaviour
 			float normalizedDeltaPosX = Mathf.InverseLerp(1f, Screen.width * 0.02f, Mathf.Abs(deltaPosX));
 
 			_valueToApply = deltaPosX > 0 ? normalizedDeltaPosX : -normalizedDeltaPosX;
-			
+
+			_shouldApplyForce = true;
+
 			_lastFrameMousePosX = Input.mousePosition.x;
-			
-			transform.Translate(_valueToApply * _sideMoveSpeedMultiplier * Time.deltaTime, 0f, _forwardMoveSpeed * Time.deltaTime);
 		}
 		else
 		{
 			_lastFrameMousePosX = Input.mousePosition.x;
 			_didLastFrameClick = true;
+		}
+	}
+
+	void FixedUpdate()
+	{
+		if (_shouldApplyForce)
+		{
+			
+			_rigidbody.MovePosition(_rigidbody.position + new Vector3(_valueToApply * _sideMoveSpeedMultiplier, 0f, _forwardMoveSpeed) * Time.deltaTime);
 		}
 	}
 }

@@ -7,30 +7,13 @@ public class TailController : MonoBehaviour
 {
 	[SerializeField] TailPiece _tailPiecePrefab;
 	[SerializeField] PlayableDirector _directorPrefab;
-	[SerializeField] TimelineAsset _newTailPieceForming;
 
 	List<TailPiece> _tailPieces = new List<TailPiece>();
 	int TailCount => _tailPieces.Count;
 
-	public void SetupAndPlayTailFormingSequence()
+	public void OnTailPiecePicking()
 	{
-		Vector3 nextTailPiecePosition = transform.position + Vector3.forward * (TailCount * -_tailPiecePrefab.zLength);
-		TailPiece instantiatedTailPiece = Instantiate(_tailPiecePrefab, nextTailPiecePosition, Quaternion.identity);
-		_tailPieces.Add(instantiatedTailPiece);
-		
-		// prepare timeline for vfx
-		PlayableDirector director = Instantiate(_directorPrefab);
-		director.GetComponent<TailPieceTimelineEventHandler>().Initialize(instantiatedTailPiece);
-		director.playableAsset = _newTailPieceForming;
-
-		foreach (PlayableBinding playableAssetOutput in director.playableAsset.outputs)
-		{
-			TrackAsset track = (TrackAsset)playableAssetOutput.sourceObject;
-			director.SetGenericBinding(track, instantiatedTailPiece);
-		}
-		
-		// actual playing...
-		director.Play();
+		SetupAndPlayTailFormingSequence();
 	}
 	
 	public void RemoveTailFromIndex(int index)
@@ -42,5 +25,25 @@ public class TailController : MonoBehaviour
 				_tailPieces.RemoveAt(i);
 			}
 		}
+	}
+	
+	void SetupAndPlayTailFormingSequence()
+	{
+		Vector3 nextTailPiecePosition = transform.position + Vector3.forward * (TailCount * -_tailPiecePrefab.zLength);
+		TailPiece instantiatedTailPiece = Instantiate(_tailPiecePrefab, nextTailPiecePosition, Quaternion.identity);
+		_tailPieces.Add(instantiatedTailPiece);
+		
+		// prepare timeline for vfx
+		PlayableDirector director = Instantiate(_directorPrefab);
+		director.GetComponent<TailPieceTimelineEventHandler>().Initialize(instantiatedTailPiece);
+
+		foreach (PlayableBinding playableAssetOutput in director.playableAsset.outputs)
+		{
+			TrackAsset track = (TrackAsset)playableAssetOutput.sourceObject;
+			director.SetGenericBinding(track, instantiatedTailPiece);
+		}
+		
+		// actual playing...
+		director.Play();
 	}
 }

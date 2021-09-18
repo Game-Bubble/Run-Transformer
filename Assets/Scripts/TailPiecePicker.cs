@@ -4,8 +4,14 @@ public class TailPiecePicker : MonoBehaviour
 {
 	[SerializeField] TailController _tailController;
 	
-	public void OnTailPiecePicking()
+	void OnTriggerEnter(Collider other)
 	{
-		_tailController.SetupAndPlayTailFormingSequence();
+		TailPiecePickable tailPiecePickable = other.GetComponent<TailPiecePickable>();
+
+		if (tailPiecePickable)
+		{
+			_tailController.OnTailPiecePicking();
+			Destroy(other.gameObject);
+		}
 	}
 }
