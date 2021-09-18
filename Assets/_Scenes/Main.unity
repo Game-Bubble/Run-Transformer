@@ -123,6 +123,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &14203955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6600013
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2030457459968869071, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_Name
+      value: Lego Brick (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+--- !u!4 &58664212 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 784097875856707366, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+  m_PrefabInstance: {fileID: 443181814}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &65464340
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +467,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4831290010421516432, guid: eca4bfeb94455044c8d87aa4ae9e6407, type: 3}
   m_PrefabInstance: {fileID: 77888350}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &374729697 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 784097875856707366, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+  m_PrefabInstance: {fileID: 1697417482}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &443181814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,6 +560,11 @@ Transform:
   m_Father: {fileID: 1342169540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &861143025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 784097875856707366, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+  m_PrefabInstance: {fileID: 1665884766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &890725594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 289521911360477180, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
@@ -674,8 +746,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bafd142de314b4492bb5cbc143d02c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tailPiecePrefab: {fileID: -8562949120404393158, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
-  _directorPrefab: {fileID: 6271359389009646508, guid: 5086291154b4b664c9234c9f779f9e00, type: 3}
 --- !u!114 &1342169547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,6 +759,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tailController: {fileID: 1342169546}
+--- !u!1001 &1344576925
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.66000265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 35.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2030457459968869071, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_Name
+      value: Lego Brick (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
 --- !u!1001 &1373805120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -746,6 +873,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+--- !u!1001 &1437813083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.66000265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2030457459968869071, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_Name
+      value: Lego Brick (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
 --- !u!1 &1507319743
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,7 +1060,13 @@ MonoBehaviour:
   m_Gravity: {x: 0, y: 0, z: 0}
   m_Force: {x: 0, y: 0, z: 0}
   m_Colliders: []
-  m_Exclusions: []
+  m_Exclusions:
+  - {fileID: 8941376255323867804}
+  - {fileID: 374729697}
+  - {fileID: 2054345428}
+  - {fileID: 861143025}
+  - {fileID: 58664212}
+  - {fileID: 1887744970}
   m_FreezeAxis: 0
   m_DistantDisable: 0
   m_ReferenceObject: {fileID: 0}
@@ -1265,6 +1455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+--- !u!4 &1887744970 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 784097875856707366, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+  m_PrefabInstance: {fileID: 1373805120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1933189516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,6 +1704,68 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &1987694249
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6600013
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686161424584071285, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2030457459968869071, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+      propertyPath: m_Name
+      value: Lego Brick (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65a830eeeb22aef449bd5df7d46361c9, type: 3}
+--- !u!4 &2054345428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 784097875856707366, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+  m_PrefabInstance: {fileID: 1886485122}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1219573474128054360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1704,3 +1961,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+--- !u!4 &8941376255323867804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 784097875856707366, guid: e9d293f6358712545a3dfd35d7486e25, type: 3}
+  m_PrefabInstance: {fileID: 8572472739726804410}
+  m_PrefabAsset: {fileID: 0}

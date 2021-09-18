@@ -5,6 +5,8 @@ using UnityEngine.Playables;
 public class TailPiece : MonoBehaviour
 {
 	[SerializeField] PlayableDirector _playableDirector;
+	[SerializeField] TailPieceTimelineEventHandler _tailPieceTimelineEventHandler;
+	[SerializeField] GameObject _tailPieceWCollider;
 	
 	Action<int> _tailPieceTakingHit;
 	
@@ -15,6 +17,8 @@ public class TailPiece : MonoBehaviour
 		_tailPieceTakingHit = onTailPieceTakingHit;
 		_index = index;
 		gameObject.SetActive(false);
+		_tailPieceWCollider.SetActive(false);
+		_tailPieceTimelineEventHandler.Initialize(_tailPieceWCollider);
 	}
 	
 	public void TakeHit()

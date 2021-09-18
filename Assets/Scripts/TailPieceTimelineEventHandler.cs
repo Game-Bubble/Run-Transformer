@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class TailPieceTimelineEventHandler : MonoBehaviour
 {
-	TailPiece _tailPieceToActivate;
+	GameObject _objectToActivate;
 	
-	public void Initialize(TailPiece tailPiece)
+	public void Initialize(GameObject tailPieceWCollider)
 	{
-		_tailPieceToActivate = tailPiece;
+		_objectToActivate = tailPieceWCollider;
 	}
 	
 	// this will be called from timeline
 	public void ActivateTailPiece()
 	{
-		_tailPieceToActivate.gameObject.SetActive(true);
+		_objectToActivate.SetActive(true);
 	}
 }
