@@ -12,13 +12,14 @@ namespace SO
 		public GameObject GetVehicle(int score)
 		{
 			GameObject vehicle = _lowestScoreVehicle;
-			
+
+			int highestCarScore = -1;
 			foreach (TransformationScoreVehiclePair transformationScoreVehiclePair in _transformationScoreVehiclePair)
 			{
-				if (score > transformationScoreVehiclePair.Score)
+				if (score > transformationScoreVehiclePair.Score && highestCarScore < transformationScoreVehiclePair.Score)
 				{
 					vehicle = transformationScoreVehiclePair.VehiclePrefab;
-					score = transformationScoreVehiclePair.Score;
+					highestCarScore = transformationScoreVehiclePair.Score;
 				}
 			}
 			return vehicle;

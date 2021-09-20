@@ -7,16 +7,16 @@ public class CharacterThrower : MonoBehaviour
 
 	void OnEnable()
 	{
-		_flyOffChannelSO.TapFinished += ThrowCharacter;
+		_flyOffChannelSO.TapFinished += ActivateThrowStage;
 	}
 
 	void OnDisable()
 	{
-		_flyOffChannelSO.TapFinished -= ThrowCharacter;
+		_flyOffChannelSO.TapFinished -= ActivateThrowStage;
 	}
 
-	void ThrowCharacter()
+	void ActivateThrowStage()
 	{
-		
+		// TODO: camera change, then throw
 	}
 }
