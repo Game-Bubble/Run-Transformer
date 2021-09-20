@@ -1,3 +1,4 @@
+using System.Linq;
 using SO;
 using UnityEngine;
 
@@ -49,19 +50,21 @@ public class TailController : MonoBehaviour
 	void OnTailPieceTakingHit(int x)
 	{
 		RemoveTailFromIndex(x);
+		UpdateScore();
 	}
-	
+
+	void UpdateScore()
+	{
+		int val = _tailPieces.Count(tailPiece => tailPiece.gameObject.activeSelf);
+		_score.CurrentValue = val;
+	}
+
 	void RemoveTailFromIndex(int index)
 	{
 		for (int i = 0; i < _tailPieces.Length; i++)
 		{
 			if (i >= index)
 			{
-				if (_tailPieces[i].gameObject.activeSelf)
-				{
-					_score.CurrentValue--;
-				}
-				
 				_tailPieces[i].gameObject.SetActive(false);
 			}
 		}

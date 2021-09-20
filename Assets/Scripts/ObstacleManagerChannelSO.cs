@@ -1,19 +1,19 @@
-using System;
+using SO;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Obstacle Manager Channel SO", menuName = "SO/Obstacle Manager Channel", order = 0)]
 public class ObstacleManagerChannelSO : ScriptableObject
 {
-	public event Action<float> ObstacleHitSpeedChanged;
-	public event Action<float> ObstacleCountChanged;
+	[SerializeField] IntValue _obstacleHitSpeed;
+	[SerializeField] IntValue _obstacleCount;
 	
 	public void SetObstacleHitSpeed(float val)
 	{
-		ObstacleHitSpeedChanged?.Invoke(val);
+		_obstacleHitSpeed.CurrentValue = Mathf.RoundToInt(val);
 	}
 
 	public void SetObstacleCount(float val)
 	{
-		ObstacleCountChanged?.Invoke(val);
+		_obstacleCount.CurrentValue = Mathf.RoundToInt(val);
 	}
 }

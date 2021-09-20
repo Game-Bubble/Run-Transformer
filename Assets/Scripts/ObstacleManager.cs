@@ -1,27 +1,21 @@
+using SO;
 using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour
 {
-	[SerializeField] ObstacleManagerChannelSO _obstacleManagerChannelSO;
+	[SerializeField] IntValue _obstacleCount;
 
 	void OnEnable()
 	{
-		_obstacleManagerChannelSO.ObstacleCountChanged += OnObstacleCountChanged;
-		_obstacleManagerChannelSO.ObstacleHitSpeedChanged += OnObstacleHitSpeedChanged;
+		_obstacleCount.OnValueChanged += OnObstacleCountChanged;
 	}
 
 	void OnDisable()
 	{
-		_obstacleManagerChannelSO.ObstacleCountChanged -= OnObstacleCountChanged;
-		_obstacleManagerChannelSO.ObstacleHitSpeedChanged -= OnObstacleHitSpeedChanged;
+		_obstacleCount.OnValueChanged -= OnObstacleCountChanged;
 	}
 
-	void OnObstacleCountChanged(float val)
-	{
-		
-	}
-
-	void OnObstacleHitSpeedChanged(float val)
+	void OnObstacleCountChanged()
 	{
 		
 	}
