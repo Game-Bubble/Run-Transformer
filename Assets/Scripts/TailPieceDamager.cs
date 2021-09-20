@@ -6,11 +6,11 @@ public class TailPieceDamager : MonoBehaviour
 	
 	void OnTriggerEnter(Collider other)
 	{
-		TailPiece tailPiece = other.GetComponent<TailPiece>();
+		TailPieceTriggerMessageSender tailPieceTriggerMsgSender = other.GetComponent<TailPieceTriggerMessageSender>();
 
-		if (tailPiece)
+		if (tailPieceTriggerMsgSender)
 		{
-			tailPiece.TakeHit();
+			tailPieceTriggerMsgSender._tailPiece.TakeHit();
 			_trigger.enabled = false;
 		}
 	}

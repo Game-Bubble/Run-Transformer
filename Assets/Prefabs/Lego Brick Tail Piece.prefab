@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289521911360477180}
   - component: {fileID: 3925938629686355292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lego Brick Tail Piece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 2920391475917834251}
   - component: {fileID: 4893094848263695399}
   - component: {fileID: 6999389698320087024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Timeline VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 37317161294582190}
   - component: {fileID: 2911965468027480598}
   - component: {fileID: 1388786165631530575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lego Brick Tail Piece Wo Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,8 +260,9 @@ GameObject:
   - component: {fileID: 7030673619506659470}
   - component: {fileID: 6214444106969026347}
   - component: {fileID: 8204103543091133409}
-  - component: {fileID: 8572472739726804415}
-  m_Layer: 0
+  - component: {fileID: 5400121112031121562}
+  - component: {fileID: 7791236118458279885}
+  m_Layer: 6
   m_Name: Lego Brick Tail Piece W Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +332,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8572472739726804415
+--- !u!135 &5400121112031121562
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699511338390247988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.17
+  m_Center: {x: 0, y: -0.000000059604645, z: 0.03996532}
+--- !u!114 &7791236118458279885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,11 +354,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7699511338390247988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baedd976e12657241bf7ff2d1c685342, type: 3}
+  m_Script: {fileID: 11500000, guid: 1695995f7edb46e5b69de2b81536bbf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
-  m_Bound: 0
-  m_Radius: 0.3
-  m_Height: 0
+  _tailPiece: {fileID: 3925938629686355292}

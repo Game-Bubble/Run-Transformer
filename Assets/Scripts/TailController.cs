@@ -1,8 +1,10 @@
+using SO;
 using UnityEngine;
 
 public class TailController : MonoBehaviour
 {
 	[SerializeField] TailPiecePicker _tailPiecePicker;
+	[SerializeField] IntValue _score;
 	
 	TailPiece[] _tailPieces;
 	int TailCount => _tailPieces.Length;
@@ -41,6 +43,7 @@ public class TailController : MonoBehaviour
 	void OnTailPiecePicking()
 	{
 		SetupAndPlayTailFormingSequence();
+		_score.CurrentValue++;
 	}
 	
 	void OnTailPieceTakingHit(int x)
@@ -54,6 +57,11 @@ public class TailController : MonoBehaviour
 		{
 			if (i >= index)
 			{
+				if (_tailPieces[i].gameObject.activeSelf)
+				{
+					_score.CurrentValue--;
+				}
+				
 				_tailPieces[i].gameObject.SetActive(false);
 			}
 		}
