@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class TailController : MonoBehaviour
 {
+	[SerializeField] TailPiecePicker _tailPiecePicker;
+	
 	TailPiece[] _tailPieces;
 	int TailCount => _tailPieces.Length;
 
@@ -12,11 +14,31 @@ public class TailController : MonoBehaviour
 		for (int i = 0; i < _tailPieces.Length; i++)
 		{
 			TailPiece tailPiece = _tailPieces[i];
-			tailPiece.Initialize(OnTailPieceTakingHit, i);
+			tailPiece.Initialize(i);
 		}
 	}
 
-	public void OnTailPiecePicking()
+	void OnEnable()
+	{
+		foreach (TailPiece tailPiece in _tailPieces)
+		{
+			tailPiece.TailPieceTakingHit += OnTailPieceTakingHit;
+		}
+
+		_tailPiecePicker.TailPiecePicking += OnTailPiecePicking;
+	}
+
+	void OnDisable()
+	{
+		foreach (TailPiece tailPiece in _tailPieces)
+		{
+			tailPiece.TailPieceTakingHit -= OnTailPieceTakingHit;
+		}
+		
+		_tailPiecePicker.TailPiecePicking -= OnTailPiecePicking;
+	}
+
+	void OnTailPiecePicking()
 	{
 		SetupAndPlayTailFormingSequence();
 	}

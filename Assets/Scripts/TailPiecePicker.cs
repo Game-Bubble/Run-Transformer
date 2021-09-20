@@ -1,8 +1,12 @@
+using System;
+using SO;
 using UnityEngine;
 
 public class TailPiecePicker : MonoBehaviour
 {
-	[SerializeField] TailController _tailController;
+	public event Action TailPiecePicking;
+	
+	[SerializeField] IntValue _score;
 	
 	void OnTriggerEnter(Collider other)
 	{
@@ -10,7 +14,10 @@ public class TailPiecePicker : MonoBehaviour
 
 		if (tailPiecePickable)
 		{
-			_tailController.OnTailPiecePicking();
+			TailPiecePicking?.Invoke();
+			
+			_score.CurrentValue++;
+			
 			Destroy(other.gameObject);
 		}
 	}

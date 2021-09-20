@@ -1,11 +1,11 @@
+using SO;
 using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
 	[SerializeField] Rigidbody _rigidbody;
-	[SerializeField] float _sideMoveSpeedMultiplier;
-	[SerializeField] float _forwardMoveSpeed;
-
+	[SerializeField] PlayerDataSO _playerDataSO;
+	
 	float _lastFrameMousePosX;
 	float _valueToApply;
 	bool _didLastFrameClick;
@@ -42,8 +42,7 @@ public class MovementController : MonoBehaviour
 	{
 		if (_shouldApplyForce)
 		{
-			
-			_rigidbody.MovePosition(_rigidbody.position + new Vector3(_valueToApply * _sideMoveSpeedMultiplier, 0f, _forwardMoveSpeed) * Time.deltaTime);
+			_rigidbody.MovePosition(_rigidbody.position + new Vector3(_valueToApply * _playerDataSO.sideMoveSpeedMultiplier, 0f, _playerDataSO.forwardMoveSpeed) * Time.deltaTime);
 		}
 	}
 }
