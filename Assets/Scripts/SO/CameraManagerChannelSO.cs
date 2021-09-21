@@ -26,5 +26,10 @@ namespace SO
 		{
 			_cameraManagerMono.SetTopDownCameraActive();
 		}
+
+		public void SendFlyCameraActiveSignal()
+		{
+			
+		}
 	}
 }

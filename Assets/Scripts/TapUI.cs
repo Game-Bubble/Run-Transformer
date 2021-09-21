@@ -31,7 +31,7 @@ public class TapUI : MonoBehaviour
 		_currentFillAmount = _tapValue.CurrentValue;
 		if (_currentFillAmount >= 100f)
 		{
-			_flyOffChannelSO.TapFinished();
+			_flyOffChannelSO.CrashHappened();
 		}
 	}
 
