@@ -19,7 +19,6 @@ public class ObstacleHitSpeedChanger : MonoBehaviour
 
 	void OnObstacleHitSpeedChanged()
 	{
-		print("SADASD");
 		float value = _obstacleHitSpeed.CurrentValue / 2f;
 		_playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(value);
 	}

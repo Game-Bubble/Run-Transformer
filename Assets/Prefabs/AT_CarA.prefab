@@ -187,6 +187,7 @@ MonoBehaviour:
   Exhausts:
   - {fileID: 192786456392035528}
   MmWiggle: {fileID: 1226452981689282126}
+  ThrowPower: 60
 --- !u!114 &1226452981689282126
 MonoBehaviour:
   m_ObjectHideFlags: 0

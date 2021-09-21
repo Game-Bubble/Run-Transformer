@@ -5,4 +5,6 @@ public class VehicleIdentity : MonoBehaviour
 {
 	public ParticleSystem[] Exhausts;
 	public MMWiggle MmWiggle;
+
+	public float ThrowPower;
 }

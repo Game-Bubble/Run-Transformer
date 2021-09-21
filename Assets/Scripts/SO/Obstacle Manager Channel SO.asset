@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c5eba7095f8494da9c5e564b22a0684, type: 3}
   m_Name: Obstacle Manager Channel SO
   m_EditorClassIdentifier: 
+  _obstacleHitSpeed: {fileID: 11400000, guid: b908abf5afe0f2141b9d7d0d63c38299, type: 2}
+  _obstacleCount: {fileID: 11400000, guid: 6bfc0677aa98482418123fc849f38e38, type: 2}

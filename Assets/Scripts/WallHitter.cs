@@ -16,7 +16,7 @@ public class WallHitter : MonoBehaviour
 			_crashParticle.Play();
 			_flyOffChannelSO.CrashHappened();
 			
-			Destroy(gameObject, 1f);
+			Destroy(gameObject, 0.1f);
 		}
 	}
 }

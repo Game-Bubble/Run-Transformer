@@ -13,12 +13,8 @@ MonoBehaviour:
   m_Name: Transformation Data SO
   m_EditorClassIdentifier: 
   _transformationScoreVehiclePair:
-  - Score: 1
-    VehiclePrefab: {fileID: 125538, guid: 5efa58d53f7193445b39155bd2b463f6, type: 3}
-  - Score: 2
-    VehiclePrefab: {fileID: 184812, guid: c236c738fa7c36b47847551f9d42ccdd, type: 3}
   - Score: 3
-    VehiclePrefab: {fileID: 190358, guid: 30edb222d610792418cac893591d2ce8, type: 3}
-  - Score: 4
     VehiclePrefab: {fileID: 180984, guid: 8f207614231f1e1419e4819322c3ee19, type: 3}
+  - Score: 6
+    VehiclePrefab: {fileID: 131810, guid: 76499f152521a08419b8f17691a666a5, type: 3}
   _lowestScoreVehicle: {fileID: 105432, guid: a5d6f9d28e9de0d4693001e9a0048a23, type: 3}
