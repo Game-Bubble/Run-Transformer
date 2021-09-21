@@ -1,4 +1,4 @@
-using System;
+using SO;
 using UnityEngine;
 
 public class WallHitter : MonoBehaviour
@@ -15,6 +15,8 @@ public class WallHitter : MonoBehaviour
 			// TODO: play crash vfx and throw player
 			_crashParticle.Play();
 			_flyOffChannelSO.CrashHappened();
+			
+			Destroy(gameObject, 1f);
 		}
 	}
 }

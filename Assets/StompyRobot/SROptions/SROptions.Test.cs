@@ -13,8 +13,7 @@ using Random = UnityEngine.Random;
 public partial class SROptions
 {
     // Uncomment the #define at the top of file to enable test options
-
-#if ENABLE_TEST_SROPTIONS
+    
 
     public enum TestValues
     {
@@ -362,6 +361,5 @@ public partial class SROptions
     {
         get { return "This is a really long string with no reason other than to test long strings."; }
     }
-
-#endif
+    
 }

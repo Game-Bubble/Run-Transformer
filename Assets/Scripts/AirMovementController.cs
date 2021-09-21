@@ -1,7 +1,7 @@
 using SO;
 using UnityEngine;
 
-public class MovementController : MonoBehaviour
+public class AirMovementController : MonoBehaviour
 {
 	[SerializeField] Rigidbody _rigidbody;
 	[SerializeField] MovementDataSO movementDataSO;
@@ -12,13 +12,26 @@ public class MovementController : MonoBehaviour
 	bool _didLastFrameClick;
 	bool _shouldApplyForce;
 
-	public void OnTouchPressUp()
+	void Update()
+	{
+		if (Input.GetMouseButtonUp(0))
+		{
+			OnTouchPressUp();
+		}
+
+		if (Input.GetMouseButton(0))
+		{
+			OnTouchPress();
+		}
+	}
+
+	void OnTouchPressUp()
 	{
 		_didLastFrameClick = false;
 		_shouldApplyForce = false;
 	}
 
-	public void OnTouchPress()
+	void OnTouchPress()
 	{
 		if (_didLastFrameClick)
 		{
@@ -43,11 +56,13 @@ public class MovementController : MonoBehaviour
 	{
 		if (_shouldApplyForce)
 		{
-			Vector3 nextPos = _rigidbody.position + new Vector3(_valueToApply * movementDataSO.sideMoveSpeedMultiplier, 0f, movementDataSO.forwardMoveSpeed) * Time.deltaTime;
-			if (nextPos.x > _xMaxPos)
+			_rigidbody.velocity = new Vector3(_valueToApply * movementDataSO.sideMoveSpeedMultiplier, _rigidbody.velocity.y, _rigidbody.velocity.z);
+				
+			Vector3 nextPos = _rigidbody.position;
+			if (_rigidbody.position.x > _xMaxPos)
 			{
 				nextPos.x = _xMaxPos;
-			}else if (nextPos.x < -_xMaxPos)
+			}else if (_rigidbody.position.x < -_xMaxPos)
 			{
 				nextPos.x = -_xMaxPos;
 			}

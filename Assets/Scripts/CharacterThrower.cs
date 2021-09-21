@@ -22,7 +22,10 @@ public class CharacterThrower : MonoBehaviour
 	void ActivateThrowStage()
 	{
 		// TODO: then throw
-		_cameraManagerChannelSO.SendFlyCameraActiveSignal();
 		GameObject characterToThrow = Instantiate(_characterToThrow, _throwPoint.position, Quaternion.identity);
+		CharacterThruster characterThruster = characterToThrow.GetComponent<CharacterThruster>();
+		characterThruster.Thrust(_throwPoint.forward * 100f);
+		_cameraManagerChannelSO.SendTargetChangeSignal(characterThruster.RootRigidbody.transform);
+		_cameraManagerChannelSO.SendFlyCameraActiveSignal();
 	}
 }

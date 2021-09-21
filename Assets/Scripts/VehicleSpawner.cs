@@ -5,7 +5,9 @@ public class VehicleSpawner : MonoBehaviour
 {
 	[SerializeField] TransformationManagerChannelSO _transformationManagerChannelSO;
 	[SerializeField] VehicleSpawnManagerChannelSO _vehicleSpawnManagerChannelSO;
-	
+	[SerializeField] CameraManagerChannelSO _cameraManagerChannelSO;
+	[SerializeField] Transform _vehicleSpawnTransform;
+
 	void OnEnable()
 	{
 		_transformationManagerChannelSO.VehicleSpawning += SpawnVehicle;
@@ -18,7 +20,8 @@ public class VehicleSpawner : MonoBehaviour
 
 	void SpawnVehicle(GameObject vehicleToSpawn)
 	{
-		GameObject vehicle = Instantiate(vehicleToSpawn, transform.position, Quaternion.identity);
+		GameObject vehicle = Instantiate(vehicleToSpawn, _vehicleSpawnTransform.position, Quaternion.identity);
+		_cameraManagerChannelSO.SendTargetChangeSignal(vehicle.transform);
 		VehicleIdentity vehicleIdentity = vehicle.GetComponent<VehicleIdentity>();
 		_vehicleSpawnManagerChannelSO.VehicleSpawned(vehicleIdentity);
 	}

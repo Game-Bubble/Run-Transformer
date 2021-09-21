@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TapController : MonoBehaviour
 {
+	[SerializeField] CameraManagerChannelSO _cameraManagerChannelSO;
 	[SerializeField] VehicleSpawnManagerChannelSO _vehicleSpawnManagerChannelSO;
 	[SerializeField] MMFeedbacks _tapFeedbacks;
 	[SerializeField] IntValue _tapValue;
@@ -25,6 +26,8 @@ public class TapController : MonoBehaviour
 
 	void OnVehicleSpawned(VehicleIdentity vehicleIdentity)
 	{
+		_cameraManagerChannelSO.SendTapCameraActiveSignal();
+		
 		_mmFeedbackWiggle.TargetWiggle = vehicleIdentity.MmWiggle;
 		_mmFeedbackParticles[0].BoundParticleSystem = vehicleIdentity.Exhausts[0];
 

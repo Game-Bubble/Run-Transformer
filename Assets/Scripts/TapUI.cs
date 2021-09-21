@@ -7,7 +7,8 @@ public class TapUI : MonoBehaviour
 {
 	[SerializeField] IntValue _tapValue;
 	[SerializeField] Image _image;
-	[SerializeField] FlyOffChannelSO _flyOffChannelSO;
+	[SerializeField] DrivingManagerChannelSO _drivingManagerChannelSO;
+	[SerializeField] CameraManagerChannelSO _cameraManagerChannelSO;
 	
 	[SerializeField] float _timeBeforeReset;
 	
@@ -31,7 +32,10 @@ public class TapUI : MonoBehaviour
 		_currentFillAmount = _tapValue.CurrentValue;
 		if (_currentFillAmount >= 100f)
 		{
-			_flyOffChannelSO.CrashHappened();
+			//tap finished
+			gameObject.SetActive(false);
+			_drivingManagerChannelSO.TapFinished();
+			_cameraManagerChannelSO.SendBackCameraActiveSignal();
 		}
 	}
 

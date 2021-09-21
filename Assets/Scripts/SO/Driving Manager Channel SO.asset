@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7914fd9dcee4a5c9e80107f49931487, type: 3}
-  m_Name: Player Data SO
+  m_Script: {fileID: 11500000, guid: 7a2f59b3a2964abea3633ddd7ce39e32, type: 3}
+  m_Name: Driving Manager Channel SO
   m_EditorClassIdentifier: 
-  sideMoveSpeedMultiplier: 7
-  forwardMoveSpeed: 5

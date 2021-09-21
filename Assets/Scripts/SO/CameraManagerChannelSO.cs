@@ -27,9 +27,19 @@ namespace SO
 			_cameraManagerMono.SetTopDownCameraActive();
 		}
 
+		public void SendTapCameraActiveSignal()
+		{
+			_cameraManagerMono.SetTapCameraActiveSignal();
+		}
+		
 		public void SendFlyCameraActiveSignal()
 		{
-			
+			_cameraManagerMono.SetFlyCameraActive();
+		}
+
+		public void SendTargetChangeSignal(Transform target)
+		{
+			_cameraManagerMono.SetTarget(target);
 		}
 	}
 }

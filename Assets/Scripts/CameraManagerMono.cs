@@ -10,6 +10,8 @@ public class CameraManagerMono : MonoBehaviour
 	[SerializeField] CinemachineVirtualCamera _sideCamera;
 	[SerializeField] CinemachineVirtualCamera _topDownCamera;
 	[SerializeField] CinemachineVirtualCamera _flyCamera;
+	[SerializeField] CinemachineVirtualCamera _tapCamera;
+	
 	
 	void Awake()
 	{
@@ -40,9 +42,28 @@ public class CameraManagerMono : MonoBehaviour
 	public void SetFlyCameraActive()
 	{
 		_flyCamera.gameObject.SetActive(true);
-		
+		_tapCamera.gameObject.SetActive(false);
 		_topDownCamera.gameObject.SetActive(false);
 		_backCamera.gameObject.SetActive(false);
 		_sideCamera.gameObject.SetActive(false);
 	}
+	
+	public void SetTapCameraActiveSignal()
+	{
+		_tapCamera.gameObject.SetActive(true);
+		_flyCamera.gameObject.SetActive(false);
+		_topDownCamera.gameObject.SetActive(false);
+		_backCamera.gameObject.SetActive(false);
+		_sideCamera.gameObject.SetActive(false);
+	}
+
+	public void SetTarget(Transform target)
+	{
+		_flyCamera.Follow = target;
+		_topDownCamera.Follow = target;
+		_backCamera.Follow = target;
+		_sideCamera.Follow = target;
+		_tapCamera.Follow = target;
+	}
+
 }

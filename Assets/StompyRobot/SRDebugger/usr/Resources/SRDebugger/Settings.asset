@@ -47,7 +47,7 @@ MonoBehaviour:
   _enableBackgroundTransparency: 1
   _collapseDuplicateLogEntries: 1
   _richTextInConsole: 1
-  _requireEntryCode: 1
+  _requireEntryCode: 0
   _requireEntryCodeEveryTime: 0
   _entryCode: 04000000080000000900000001000000
   _useDebugCamera: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   _profilerAlignment: 2
   _optionsAlignment: 3
   _consoleAlignment: 0
-  _triggerPosition: 1
+  _triggerPosition: 0
   _maximumConsoleEntries: 1500
   _enableEventSystemCreation: 1
   _automaticShowCursor: 1
