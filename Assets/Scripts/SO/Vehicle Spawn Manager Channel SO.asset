@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7914fd9dcee4a5c9e80107f49931487, type: 3}
-  m_Name: Player Data SO
+  m_Script: {fileID: 11500000, guid: 995a3a37f4f5469d8d14b39df9f20ab2, type: 3}
+  m_Name: Vehicle Spawn Manager Channel SO
   m_EditorClassIdentifier: 
-  sideMoveSpeedMultiplier: 7
-  forwardMoveSpeed: 4

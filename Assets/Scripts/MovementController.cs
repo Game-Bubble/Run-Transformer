@@ -5,6 +5,7 @@ public class MovementController : MonoBehaviour
 {
 	[SerializeField] Rigidbody _rigidbody;
 	[SerializeField] PlayerDataSO _playerDataSO;
+	[SerializeField] float _xMaxPos;
 	
 	float _lastFrameMousePosX;
 	float _valueToApply;
@@ -42,7 +43,15 @@ public class MovementController : MonoBehaviour
 	{
 		if (_shouldApplyForce)
 		{
-			_rigidbody.MovePosition(_rigidbody.position + new Vector3(_valueToApply * _playerDataSO.sideMoveSpeedMultiplier, 0f, _playerDataSO.forwardMoveSpeed) * Time.deltaTime);
+			Vector3 nextPos = _rigidbody.position + new Vector3(_valueToApply * _playerDataSO.sideMoveSpeedMultiplier, 0f, _playerDataSO.forwardMoveSpeed) * Time.deltaTime;
+			if (nextPos.x > _xMaxPos)
+			{
+				nextPos.x = _xMaxPos;
+			}else if (nextPos.x < -_xMaxPos)
+			{
+				nextPos.x = -_xMaxPos;
+			}
+			_rigidbody.MovePosition(nextPos);
 		}
 	}
 }

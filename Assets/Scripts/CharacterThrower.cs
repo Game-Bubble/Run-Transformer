@@ -18,5 +18,6 @@ public class CharacterThrower : MonoBehaviour
 	void ActivateThrowStage()
 	{
 		// TODO: camera change, then throw
+		
 	}
 }
