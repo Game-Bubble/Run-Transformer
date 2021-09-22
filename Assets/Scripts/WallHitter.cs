@@ -5,6 +5,7 @@ public class WallHitter : MonoBehaviour
 {
 	[SerializeField] ParticleSystem _crashParticle;
 	[SerializeField] FlyOffChannelSO _flyOffChannelSO;
+	[SerializeField] GameObject _vehicleVisuals;
 	
 	void OnTriggerEnter(Collider other)
 	{
@@ -16,7 +17,8 @@ public class WallHitter : MonoBehaviour
 			_crashParticle.Play();
 			_flyOffChannelSO.CrashHappened();
 			
-			Destroy(gameObject, 0.1f);
+			_vehicleVisuals.SetActive(false);
+			Destroy(gameObject, 1f);
 		}
 	}
 }

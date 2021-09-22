@@ -27,17 +27,23 @@ public class VehicleController : MonoBehaviour
 	{
 		if (Input.GetMouseButton(0))
 		{
-			_vehicleMovementController.OnTouchPress();
-
-			foreach (ParticleSystem vehicleIdentityExhaust in _vehicleIdentity.Exhausts)
+			if (_vehicleMovementController.enabled)
 			{
-				vehicleIdentityExhaust.Play(true);
+				_vehicleMovementController.OnTouchPress();
+
+				foreach (ParticleSystem vehicleIdentityExhaust in _vehicleIdentity.Exhausts)
+				{
+					vehicleIdentityExhaust.Play(true);
+				}
 			}
 		}
 
 		if (Input.GetMouseButtonUp(0))
 		{
-			_vehicleMovementController.OnTouchPressUp();
+			if (_vehicleMovementController.enabled)
+			{
+				_vehicleMovementController.OnTouchPressUp();
+			}
 		}
 	}
 }

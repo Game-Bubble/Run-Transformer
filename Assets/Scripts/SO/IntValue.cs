@@ -16,13 +16,12 @@ namespace SO
 				OnValueChanged?.Invoke();
 			}
 		}
-		int _currentValue;
+		[NonSerialized] int _currentValue;
 
 		public event Action OnValueChanged;
 
 		public void OnBeforeSerialize()
 		{
-		
 		}
 
 		public void OnAfterDeserialize()

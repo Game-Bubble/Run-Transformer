@@ -11,12 +11,13 @@ public class CameraManagerMono : MonoBehaviour
 	[SerializeField] CinemachineVirtualCamera _topDownCamera;
 	[SerializeField] CinemachineVirtualCamera _flyCamera;
 	[SerializeField] CinemachineVirtualCamera _tapCamera;
-	
-	
+	[SerializeField] CinemachineVirtualCamera _vehicleCamera;
+
 	void Awake()
 	{
 		cameraManagerChannelSO.Initialize(this);
 	}
+	
 	
 	public void SetBackCameraActive()
 	{
