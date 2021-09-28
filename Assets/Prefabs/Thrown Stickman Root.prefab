@@ -1748,7 +1748,7 @@ MonoBehaviour:
   stateSettings:
     killDuration: 1
     deadMuscleWeight: 0.01
-    deadMuscleDamper: 20
+    deadMuscleDamper: 2
     maxFreezeSqrVelocity: 0.02
     freezePermanently: 0
     enableAngularLimitsOnKill: 1
@@ -1762,7 +1762,7 @@ MonoBehaviour:
   pinWeight: 1
   muscleWeight: 1
   muscleSpring: 100
-  muscleDamper: 150
+  muscleDamper: 10
   pinPow: 4
   pinDistanceFalloff: 5
   angularPinning: 0

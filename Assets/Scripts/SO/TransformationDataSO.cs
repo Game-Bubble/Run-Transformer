@@ -7,18 +7,18 @@ namespace SO
 	public class TransformationDataSO : ScriptableObject
 	{
 		[SerializeField] TransformationScoreVehiclePair[] _transformationScoreVehiclePair;
-		[SerializeField] GameObject _lowestScoreVehicle;
+		[SerializeField] VehicleIdentity _lowestScoreVehicle;
 
 		public GameObject GetVehicle(int score)
 		{
-			GameObject vehicle = _lowestScoreVehicle;
+			GameObject vehicle = _lowestScoreVehicle.gameObject;
 
 			int highestCarScore = -1;
 			foreach (TransformationScoreVehiclePair transformationScoreVehiclePair in _transformationScoreVehiclePair)
 			{
 				if (score > transformationScoreVehiclePair.Score && highestCarScore < transformationScoreVehiclePair.Score)
 				{
-					vehicle = transformationScoreVehiclePair.VehiclePrefab;
+					vehicle = transformationScoreVehiclePair.VehiclePrefab.gameObject;
 					highestCarScore = transformationScoreVehiclePair.Score;
 				}
 			}
@@ -30,6 +30,6 @@ namespace SO
 	public struct TransformationScoreVehiclePair
 	{
 		public int Score;
-		public GameObject VehiclePrefab;
+		public VehicleIdentity VehiclePrefab;
 	}
 }

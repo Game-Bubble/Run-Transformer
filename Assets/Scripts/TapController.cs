@@ -1,4 +1,5 @@
 using MoreMountains.Feedbacks;
+using MoreMountains.NiceVibrations;
 using SO;
 using UnityEngine;
 
@@ -43,6 +44,7 @@ public class TapController : MonoBehaviour
 		{
 			_tapValue.CurrentValue += 10;
 			_tapFeedbacks.PlayFeedbacks();
+			MMVibrationManager.Haptic (HapticTypes.RigidImpact);
 		}
 	}
 }

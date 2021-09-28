@@ -35,7 +35,7 @@ public class TapUI : MonoBehaviour
 			//tap finished
 			gameObject.SetActive(false);
 			_drivingManagerChannelSO.TapFinished();
-			_cameraManagerChannelSO.SendBackCameraActiveSignal();
+			_cameraManagerChannelSO.SendVehicleCameraActiveSignal();
 		}
 	}
 

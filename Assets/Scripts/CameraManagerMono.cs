@@ -13,49 +13,42 @@ public class CameraManagerMono : MonoBehaviour
 	[SerializeField] CinemachineVirtualCamera _tapCamera;
 	[SerializeField] CinemachineVirtualCamera _vehicleCamera;
 
+	CinemachineVirtualCamera _currentActiveCam;
+	
 	void Awake()
 	{
 		cameraManagerChannelSO.Initialize(this);
+		_currentActiveCam = _backCamera;
 	}
-	
-	
+
 	public void SetBackCameraActive()
 	{
-		_backCamera.gameObject.SetActive(true);
-		_sideCamera.gameObject.SetActive(false);
-		_topDownCamera.gameObject.SetActive(false);
+		SetCameraActive(_backCamera);
 	}
 
 	public void SetSideCameraActive()
 	{
-		_sideCamera.gameObject.SetActive(true);
-		_backCamera.gameObject.SetActive(false);
-		_topDownCamera.gameObject.SetActive(false);
+		SetCameraActive(_sideCamera);
 	}
 
 	public void SetTopDownCameraActive()
 	{
-		_topDownCamera.gameObject.SetActive(true);
-		_backCamera.gameObject.SetActive(false);
-		_sideCamera.gameObject.SetActive(false);
+		SetCameraActive(_topDownCamera);
 	}
 
 	public void SetFlyCameraActive()
 	{
-		_flyCamera.gameObject.SetActive(true);
-		_tapCamera.gameObject.SetActive(false);
-		_topDownCamera.gameObject.SetActive(false);
-		_backCamera.gameObject.SetActive(false);
-		_sideCamera.gameObject.SetActive(false);
+		SetCameraActive(_flyCamera);	
 	}
 	
 	public void SetTapCameraActiveSignal()
 	{
-		_tapCamera.gameObject.SetActive(true);
-		_flyCamera.gameObject.SetActive(false);
-		_topDownCamera.gameObject.SetActive(false);
-		_backCamera.gameObject.SetActive(false);
-		_sideCamera.gameObject.SetActive(false);
+		SetCameraActive(_tapCamera);
+	}
+
+	public void SetVehicleCameraActiveSignal()
+	{
+		SetCameraActive(_vehicleCamera);
 	}
 
 	public void SetTarget(Transform target)
@@ -65,6 +58,13 @@ public class CameraManagerMono : MonoBehaviour
 		_backCamera.Follow = target;
 		_sideCamera.Follow = target;
 		_tapCamera.Follow = target;
+		_vehicleCamera.Follow = target;
 	}
 
+	void SetCameraActive(CinemachineVirtualCamera virtualCamera)
+	{
+		_currentActiveCam.gameObject.SetActive(false);
+		virtualCamera.gameObject.SetActive(true);
+		_currentActiveCam = virtualCamera;
+	}
 }
