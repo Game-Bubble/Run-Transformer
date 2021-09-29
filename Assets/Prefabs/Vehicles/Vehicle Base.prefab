@@ -557,7 +557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crashParticle: {fileID: 0}
   _flyOffChannelSO: {fileID: 11400000, guid: 2ed710e529241bf4b90f74be5af4c070, type: 2}
-  _vehicleVisuals: {fileID: 121332398880254880}
+  _gameObjectsThatWillDeactivatedOnHit: []
 --- !u!1 &5906303855899029704
 GameObject:
   m_ObjectHideFlags: 0

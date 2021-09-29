@@ -44,7 +44,7 @@ public class TapController : MonoBehaviour
 		{
 			_tapValue.CurrentValue += 10;
 			_tapFeedbacks.PlayFeedbacks();
-			MMVibrationManager.Haptic (HapticTypes.RigidImpact);
+			MMVibrationManager.Haptic (HapticTypes.HeavyImpact);
 		}
 	}
 }

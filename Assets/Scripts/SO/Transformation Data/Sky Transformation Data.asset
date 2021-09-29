@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fea157569574774a67f07ed6bf0cb4f, type: 3}
+  m_Name: Sky Transformation Data
+  m_EditorClassIdentifier: 
+  _transformationScoreVehiclePair:
+  - Score: 6
+    VehiclePrefab: {fileID: 4970645058851793769, guid: f45e231e5da7de24ca8ff57888c00b72, type: 3}
+  - Score: 10
+    VehiclePrefab: {fileID: 305532348528809101, guid: e81e9d86150637b4ba9acbde676a63e7, type: 3}
+  _lowestScoreVehicle: {fileID: 1828256487608958087, guid: dff6f8d4bd0e4ed4da790f74e481595f, type: 3}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7914fd9dcee4a5c9e80107f49931487, type: 3}
   m_Name: Jet Movement Data SO
   m_EditorClassIdentifier: 
-  sideMoveSpeedMultiplier: 10
-  forwardMoveSpeed: 80
+  sideMoveSpeedMultiplier: 12
+  forwardMoveSpeed: 60

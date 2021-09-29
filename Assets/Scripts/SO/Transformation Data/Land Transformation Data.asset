@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fea157569574774a67f07ed6bf0cb4f, type: 3}
+  m_Name: Land Transformation Data
+  m_EditorClassIdentifier: 
+  _transformationScoreVehiclePair:
+  - Score: 6
+    VehiclePrefab: {fileID: 5602531476488997841, guid: 58cc6298f4261ee42a99785816e122cb, type: 3}
+  - Score: 10
+    VehiclePrefab: {fileID: 4234304554884768552, guid: 85531f86ba60e9e46b5e84b9e52326b4, type: 3}
+  _lowestScoreVehicle: {fileID: 6820208847510899583, guid: 97fb9f9737dd63949829b7a84ee84001, type: 3}

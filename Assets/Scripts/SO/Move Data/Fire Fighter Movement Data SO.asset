@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Fire Fighter Movement Data SO
   m_EditorClassIdentifier: 
   sideMoveSpeedMultiplier: 10
-  forwardMoveSpeed: 50
+  forwardMoveSpeed: 40

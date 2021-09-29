@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fea157569574774a67f07ed6bf0cb4f, type: 3}
+  m_Name: Sea Transformation Data
+  m_EditorClassIdentifier: 
+  _transformationScoreVehiclePair:
+  - Score: 6
+    VehiclePrefab: {fileID: 7914155386493381328, guid: 7c2715af0e09f8642878997ca9f16c77, type: 3}
+  - Score: 10
+    VehiclePrefab: {fileID: 7133713392695461661, guid: 36914294affc5cf43ad82f64d7e45f53, type: 3}
+  _lowestScoreVehicle: {fileID: 1054483445227798006, guid: ed0292e0e793b344b8f2821c8865daf0, type: 3}

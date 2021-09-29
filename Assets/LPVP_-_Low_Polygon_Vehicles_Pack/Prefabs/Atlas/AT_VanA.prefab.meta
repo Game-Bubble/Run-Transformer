@@ -1,8 +1,9 @@
 fileFormatVersion: 2
 guid: 45e1db85154db8c4c8365f5dff79ea72
-timeCreated: 1466589910
-licenseType: Store
-NativeFormatImporter:
+labels:
+- AtlasVehicle
+PrefabImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
