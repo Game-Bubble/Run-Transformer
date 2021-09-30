@@ -827,6 +827,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7c14b86676361bf46ba245f150ccc1bd, type: 2}
+    - target: {fileID: 6660250929131231909, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: movementDataSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e8aecc09c1c6fb4c8a5e3bd860e0d99, type: 2}
     - target: {fileID: 7059382539938367399, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.25
@@ -857,7 +861,7 @@ PrefabInstance:
       objectReference: {fileID: 985232488701611039}
     - target: {fileID: 8947290200779517629, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: ThrowPower
-      value: 120
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 8947290200779517629, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: Exhausts.Array.size

@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.005931254
+      value: -0.05884137
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65,19 +65,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.999999
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.00094480236
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.0010818987
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -102,14 +102,14 @@ PrefabInstance:
     - target: {fileID: 6660250929131231909, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: movementDataSO
       value: 
-      objectReference: {fileID: 11400000, guid: fa20fb5922944314b9f2779a4d430dd1, type: 2}
+      objectReference: {fileID: 11400000, guid: c97189bf0298f9f4a939fedbb6c4c2cd, type: 2}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _crashParticle
       value: 
       objectReference: {fileID: 8734269838328102434}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[0]
@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[2]
       value: 
       objectReference: {fileID: 8452094314021093760}
+    - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[3]
+      value: 
+      objectReference: {fileID: 8868625507632350474}
     - target: {fileID: 8947290200779517629, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: ThrowPower
       value: 130
@@ -177,15 +181,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.36
+      value: -1.256
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 0.355
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.25
+      value: -1.981
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -352,6 +356,10 @@ PrefabInstance:
       propertyPath: targetGO
       value: 
       objectReference: {fileID: 2198931636345913856}
+    - target: {fileID: 5543082827734620883, guid: 4307a868fddb72343bc6f64325596b3a, type: 3}
+      propertyPath: endValueV3.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7705496286588769769, guid: 4307a868fddb72343bc6f64325596b3a, type: 3}
       propertyPath: m_Name
       value: Water Ripple Effector
@@ -379,15 +387,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.36
+      value: 1.256
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 0.355
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.25
+      value: -1.981
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -530,6 +538,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
+--- !u!1 &8868625507632350474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 130552, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
+  m_PrefabInstance: {fileID: 8868625507632347378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &8868625507647376528 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 19838050, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}

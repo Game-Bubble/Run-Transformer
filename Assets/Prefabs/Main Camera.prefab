@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8283902908031759560}
   - component: {fileID: 8283902908031759564}
   - component: {fileID: 742329434592298085}
+  - component: {fileID: 1958560745}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -34,7 +35,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!20 &8283902908031759566
 Camera:
   m_ObjectHideFlags: 0
@@ -59,7 +60,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 200
+  far clip plane: 120
   field of view: 75
   orthographic: 0
   orthographic size: 5
@@ -74,7 +75,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -161,3 +162,29 @@ Skybox:
   m_GameObject: {fileID: 8283902908031759561}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 0ff23603c187cd146bc65bf76e851175, type: 2}
+--- !u!114 &1958560745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8283902908031759561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb42831ee5422f409e7f24f9e7488ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stage: 1
+  renderingStrategy: 0
+  renderTargetName: 
+  renderingMode: 1
+  outlineLayerMask: -1
+  scaleIndepented: 1
+  primaryRendererScale: 0.425
+  blurShift: 1
+  dilateShift: 2
+  dilateIterations: 2
+  dilateQuality: 0
+  blurIterations: 1
+  blurType: 1
+  infoRendererScale: 0.75

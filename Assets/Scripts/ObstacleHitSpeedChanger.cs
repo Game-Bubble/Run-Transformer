@@ -1,10 +1,10 @@
+using DG.Tweening;
 using SO;
 using UnityEngine;
-using UnityEngine.Playables;
 
 public class ObstacleHitSpeedChanger : MonoBehaviour
 {
-	[SerializeField] PlayableDirector _playableDirector;
+	[SerializeField] DOTweenAnimation _doTweenAnimation;
 	[SerializeField] IntValue _obstacleHitSpeed;
 
 	void OnEnable()
@@ -20,6 +20,6 @@ public class ObstacleHitSpeedChanger : MonoBehaviour
 	void OnObstacleHitSpeedChanged()
 	{
 		float value = _obstacleHitSpeed.CurrentValue / 2f;
-		_playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(value);
+		_doTweenAnimation.duration = value;
 	}
 }

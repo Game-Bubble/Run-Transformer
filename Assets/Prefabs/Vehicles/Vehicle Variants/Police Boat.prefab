@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: targetGO
       value: 
       objectReference: {fileID: 8297426289482938603}
+    - target: {fileID: 5543082827734620883, guid: 4307a868fddb72343bc6f64325596b3a, type: 3}
+      propertyPath: endValueV3.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7705496286588769769, guid: 4307a868fddb72343bc6f64325596b3a, type: 3}
       propertyPath: m_Name
       value: Water Ripple Effector
@@ -154,6 +158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
+--- !u!1 &3923953011845695937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 130552, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
+  m_PrefabInstance: {fileID: 3923953011845690425}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &3923953011860979803 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 19838050, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
@@ -238,7 +247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6795676324115017760, guid: de7bdc5d653e3f34ab9e5f436fb7f317, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.391
+      value: -0.641
       objectReference: {fileID: 0}
     - target: {fileID: 6795676324115017760, guid: de7bdc5d653e3f34ab9e5f436fb7f317, type: 3}
       propertyPath: m_LocalPosition.y
@@ -305,7 +314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6795676324115017760, guid: de7bdc5d653e3f34ab9e5f436fb7f317, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.391
+      value: 0.64100003
       objectReference: {fileID: 0}
     - target: {fileID: 6795676324115017760, guid: de7bdc5d653e3f34ab9e5f436fb7f317, type: 3}
       propertyPath: m_LocalPosition.y
@@ -432,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 3955985105002231857}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[0]
@@ -446,6 +455,10 @@ PrefabInstance:
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[2]
       value: 
       objectReference: {fileID: 8297426289482938603}
+    - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[3]
+      value: 
+      objectReference: {fileID: 3923953011845695937}
     - target: {fileID: 8947290200779517629, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: Exhausts.Array.size
       value: 3

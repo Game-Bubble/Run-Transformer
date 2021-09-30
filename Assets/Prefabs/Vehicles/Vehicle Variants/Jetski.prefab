@@ -16,6 +16,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.39
       objectReference: {fileID: 0}
@@ -78,6 +90,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: 17c23f2ceff6b544f9a680210471a061, type: 3}
+    - target: {fileID: 162678278773768873, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: ScaleWiggleProperties.AmplitudeMax.x
       value: 0.2
@@ -176,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 7102384273100513224}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[0]
@@ -190,6 +206,10 @@ PrefabInstance:
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[2]
       value: 
       objectReference: {fileID: 1175611303547744205}
+    - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.data[3]
+      value: 
+      objectReference: {fileID: 2283441486803526615}
     - target: {fileID: 8947290200779517629, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: ThrowPower
       value: 90
@@ -284,6 +304,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
+--- !u!1 &2283441486803526615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 130552, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
+  m_PrefabInstance: {fileID: 2283441486803607087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &2283441486823369293 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 19838050, guid: 5e6b78bb4b4d6d34e970c19c9577f070, type: 3}
@@ -348,6 +373,10 @@ PrefabInstance:
       propertyPath: targetGO
       value: 
       objectReference: {fileID: 1175611303547744205}
+    - target: {fileID: 5543082827734620883, guid: 4307a868fddb72343bc6f64325596b3a, type: 3}
+      propertyPath: endValueV3.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7705496286588769769, guid: 4307a868fddb72343bc6f64325596b3a, type: 3}
       propertyPath: m_Name
       value: Water Ripple Effector
@@ -368,6 +397,18 @@ PrefabInstance:
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.x

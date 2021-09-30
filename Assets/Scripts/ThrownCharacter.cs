@@ -1,13 +1,27 @@
+using SO;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ThrownCharacter : MonoBehaviour
 {
-	void Update()
+	[SerializeField] GameCanvasChannelSO _gameCanvasChannelSO;
+	bool _isCollisionMessageSent;
+	
+	void OnCollisionEnter(Collision other)
 	{
-		if (transform.position.y < -2)
+		if (!_isCollisionMessageSent)
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			LandingGround landingGround = other.collider.GetComponent<LandingGround>();
+			
+			if (landingGround)
+			{
+				Invoke(nameof(SendLevelFinished), 1f);
+				_isCollisionMessageSent = true;
+			}
 		}
+	}
+
+	void SendLevelFinished()
+	{
+		_gameCanvasChannelSO.LevelFinished();
 	}
 }

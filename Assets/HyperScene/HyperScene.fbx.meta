@@ -55,7 +55,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -63,7 +64,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -117,7 +118,192 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: HyperScene(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ball
+      parentName: HyperScene(Clone)
+      position: {x: 36.283512, y: 0.2549624, z: -0.4254737}
+      rotation: {x: -0.3582217, y: -0.08339855, z: -0.124745145, w: 0.9214991}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: Boat
+      parentName: HyperScene(Clone)
+      position: {x: 18.6317, y: -0.021833122, z: -3.2756069}
+      rotation: {x: 0.00000006477356, y: -0.4363436, z: 0.00000005311955, w: 0.8997801}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Buoy
+      parentName: HyperScene(Clone)
+      position: {x: 18.76234, y: 0.45074734, z: 2.2751293}
+      rotation: {x: -0.06774192, y: -0.28750226, z: 0.006123494, w: 0.9553617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lifebuoy
+      parentName: HyperScene(Clone)
+      position: {x: 26.364082, y: 0.09691416, z: 0.2959983}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Little Buoy
+      parentName: HyperScene(Clone)
+      position: {x: 6.8450065, y: 0.0630877, z: -2.6411474}
+      rotation: {x: -0.39512888, y: -0.65363705, z: 0.015100959, w: 0.64529353}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+    - name: Rock
+      parentName: HyperScene(Clone)
+      position: {x: 34.03352, y: 0.0898118, z: -2.9844742}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Small Boat
+      parentName: HyperScene(Clone)
+      position: {x: -14.322463, y: -0.069077455, z: -0.25743103}
+      rotation: {x: 0.000000021862022, y: -0.3231468, z: 0.0000000036101162, w: 0.9463489}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box
+      parentName: HyperScene(Clone)
+      position: {x: -0.9435794, y: 0.012990445, z: -3.396164}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.001
+      parentName: HyperScene(Clone)
+      position: {x: -4.1217604, y: 0.22566743, z: 0.10064602}
+      rotation: {x: 0.000000020907612, y: 0.29133612, z: -0.0000000063673533, w: 0.95662075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Box.002
+      parentName: HyperScene(Clone)
+      position: {x: -0.6834414, y: -0.037202567, z: -3.8596358}
+      rotation: {x: 0.000000009518693, y: 0.51147074, z: -0.000000026739116, w: 0.8593007}
+      scale: {x: 0.9999999, y: 0.6540323, z: 0.9999999}
+    - name: Oar
+      parentName: HyperScene(Clone)
+      position: {x: -4.6944294, y: 0.07319292, z: -0.563527}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 0.88881207, y: 0.88881207, z: 0.88881207}
+    - name: Rocks
+      parentName: HyperScene(Clone)
+      position: {x: 43.517967, y: -0.46942642, z: 2.6131985}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 0.87417483, y: 0.87417483, z: 0.78167653}
+    - name: Ot
+      parentName: HyperScene(Clone)
+      position: {x: 4.0820885, y: 0.14064153, z: 1.8228135}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ot.006
+      parentName: Ot
+      position: {x: 0.012159424, y: 0.0036123984, z: -0.100139156}
+      rotation: {x: 7.1054274e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ot.001
+      parentName: Ot.006
+      position: {x: -0.0115374755, y: -0.0033349788, z: 0.100142665}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Ot.002
+      parentName: Ot.006
+      position: {x: -0.0120077515, y: -0.0030564582, z: 0.10012573}
+      rotation: {x: 0.5526309, y: 0.441134, z: 0.44113392, w: 0.5526307}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Ot.003
+      parentName: Ot.006
+      position: {x: -0.011683044, y: -0.002852715, z: 0.10008392}
+      rotation: {x: 0.5526309, y: 0.441134, z: 0.44113392, w: 0.5526307}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Ot.004
+      parentName: Ot.006
+      position: {x: -0.011734009, y: -0.003570031, z: 0.10017075}
+      rotation: {x: 0.5526309, y: 0.441134, z: 0.44113392, w: 0.5526307}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Ot.005
+      parentName: Ot.006
+      position: {x: -0.012360839, y: -0.0032501589, z: 0.10014175}
+      rotation: {x: 0.42781803, y: 0.5630025, z: 0.5630024, w: 0.42781797}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: Lifebuoy.001
+      parentName: HyperScene(Clone)
+      position: {x: 26.364082, y: 0.14785367, z: 0.05802591}
+      rotation: {x: -0.14286035, y: -0.000000043263036, z: -0.000000006244625, w: 0.9897429}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Car
+      parentName: HyperScene(Clone)
+      position: {x: -3.2322206, y: 0.45552963, z: -31.36488}
+      rotation: {x: -0.00000002669254, y: 0.7071067, z: 0.000000026692536, w: 0.7071068}
+      scale: {x: 1.2769811, y: 1.2769811, z: 3.4360442}
+    - name: Mesh01
+      parentName: Car
+      position: {x: -0, y: 0.00000004802452, z: 0.14093605}
+      rotation: {x: 7.247591e-16, y: 2.2169239e-15, z: -0.0000000030398595, w: 1}
+      scale: {x: 2.4509618, y: 2.4509618, z: 0.9108821}
+    - name: Mesh02
+      parentName: Mesh01
+      position: {x: 0.00078796386, y: -0.0024905428, z: -0.16698189}
+      rotation: {x: 0.7071068, y: 0.00000011210278, z: 0.000000020142695, w: 0.7071067}
+      scale: {x: 0.0031950595, y: 0.008597126, z: 0.0011874208}
+    - name: Mesh04
+      parentName: Mesh01
+      position: {x: 0.00078796386, y: -0.0024905428, z: -0.16698189}
+      rotation: {x: 0.7071068, y: 0.00000011210278, z: 0.000000020142695, w: 0.7071067}
+      scale: {x: 0.0031950595, y: 0.008597126, z: 0.0011874208}
+    - name: Mesh05
+      parentName: Car
+      position: {x: 0.69400877, y: -0.7190233, z: -0.4638284}
+      rotation: {x: 7.247591e-16, y: 2.2169239e-15, z: -0.0000000030398595, w: 1}
+      scale: {x: 2.4509618, y: 2.4509618, z: 0.9108821}
+    - name: Mesh05.001
+      parentName: Car
+      position: {x: 0.69400877, y: -0.71902335, z: 0.6770805}
+      rotation: {x: 7.247591e-16, y: 2.2169239e-15, z: -0.0000000030398595, w: 1}
+      scale: {x: 2.4509618, y: 2.4509618, z: 0.9108821}
+    - name: Mesh07
+      parentName: Car
+      position: {x: -0.66951656, y: -0.7190234, z: -0.46382767}
+      rotation: {x: 7.247591e-16, y: 2.2169239e-15, z: -0.0000000030398595, w: 1}
+      scale: {x: 2.4509618, y: 2.4509618, z: 0.9108821}
+    - name: Mesh07.001
+      parentName: Car
+      position: {x: -0.66951656, y: -0.7190235, z: 0.67901945}
+      rotation: {x: 7.247591e-16, y: 2.2169239e-15, z: -0.0000000030398595, w: 1}
+      scale: {x: 2.4509618, y: 2.4509618, z: 0.9108821}
+    - name: Char
+      parentName: HyperScene(Clone)
+      position: {x: -0, y: 0.057598934, z: -28.243277}
+      rotation: {x: 0.5000001, y: 0.49999988, z: -0.49999997, w: 0.50000006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube.001
+      parentName: HyperScene(Clone)
+      position: {x: -28.33546, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube.002
+      parentName: HyperScene(Clone)
+      position: {x: -28.365063, y: 0, z: -2.0597322}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dock
+      parentName: HyperScene(Clone)
+      position: {x: -9.218741, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dock.001
+      parentName: HyperScene(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dock.002
+      parentName: HyperScene(Clone)
+      position: {x: -19.276669, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Jetski
+      parentName: HyperScene(Clone)
+      position: {x: -0, y: 0, z: -26.996803}
+      rotation: {x: 0.00000008146034, y: -0.00000004371139, z: 3.621977e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Copter
+      parentName: HyperScene(Clone)
+      position: {x: -1.1110857, y: 1.8332069, z: -23.55529}
+      rotation: {x: 0.50000006, y: 0.5000002, z: 0.4999999, w: 0.4999999}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -128,11 +314,11 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1

@@ -30,11 +30,10 @@ public class TapController : MonoBehaviour
 		_cameraManagerChannelSO.SendTapCameraActiveSignal();
 		
 		_mmFeedbackWiggle.TargetWiggle = vehicleIdentity.MmWiggle;
-		_mmFeedbackParticles[0].BoundParticleSystem = vehicleIdentity.Exhausts[0];
 
-		if (vehicleIdentity.Exhausts.Length == 2)
+		for (int i = 0; i < vehicleIdentity.Exhausts.Length; i++)
 		{
-			_mmFeedbackParticles[1].BoundParticleSystem = vehicleIdentity.Exhausts[1];
+			_mmFeedbackParticles[i].BoundParticleSystem = vehicleIdentity.Exhausts[i];
 		}
 	}
 	

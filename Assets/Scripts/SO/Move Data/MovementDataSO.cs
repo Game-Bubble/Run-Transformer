@@ -1,13 +1,14 @@
 using UnityEngine;
 
-namespace SO
+namespace SO.Move_Data
 {
-	[CreateAssetMenu(fileName = "Player Data SO", menuName = "SO/Player Data", order = 0)]
+	[CreateAssetMenu(fileName = "Movement Data", menuName = "SO/Player Data", order = 0)]
 	public class MovementDataSO : ScriptableObject
 	{
 		public float sideMoveSpeedMultiplier = 10f;
 		public float forwardMoveSpeed = 4f;
-
+		public float throwPower = 40f;
+		
 		public void ChangeSideMoveSpeedMultiplier(float val)
 		{
 			sideMoveSpeedMultiplier = val;

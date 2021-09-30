@@ -26,7 +26,7 @@ public class CharacterThrower : MonoBehaviour
 
 	void RegisterVehicleThrowPower(VehicleIdentity vi)
 	{
-		_throwPower = vi.ThrowPower;
+		_throwPower = vi.GetComponent<MovementController>().ThrowPower;
 	}
 
 	void ActivateThrowStage()

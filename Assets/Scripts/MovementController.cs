@@ -1,4 +1,5 @@
 using SO;
+using SO.Move_Data;
 using UnityEngine;
 
 public class MovementController : MonoBehaviour
@@ -7,6 +8,8 @@ public class MovementController : MonoBehaviour
 	[SerializeField] MovementDataSO movementDataSO;
 	[SerializeField] GameConstraints _gameConstraints;
 	
+	public float ThrowPower => movementDataSO.throwPower;
+
 	float _lastFrameMousePosX;
 	float _valueToApply;
 	bool _didLastFrameClick;

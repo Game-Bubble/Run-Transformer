@@ -434,6 +434,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RootRigidbody: {fileID: 4351698851169118763}
+  RigidbodiesToThrust:
+  - {fileID: 4351698851169118773}
+  - {fileID: 4351698851169118761}
+  - {fileID: 4351698851169118788}
+  - {fileID: 4351698851169118797}
 --- !u!1 &4351698852067026902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,6 +1543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19d66f36a864ea5aa231ccee7e1e225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameCanvasChannelSO: {fileID: 11400000, guid: cc7427db7cdfcee4190282af4c67c976, type: 2}
+  _gameObjectToDeactivate: {fileID: 9180701804397658412}
 --- !u!1 &9180701804397658410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1762,7 +1769,7 @@ MonoBehaviour:
   pinWeight: 1
   muscleWeight: 1
   muscleSpring: 100
-  muscleDamper: 10
+  muscleDamper: 5
   pinPow: 4
   pinDistanceFalloff: 5
   angularPinning: 0

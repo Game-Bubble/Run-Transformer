@@ -182,7 +182,7 @@ MonoBehaviour:
   sourceGameObject:
     exposedName: 555c5aaf28d2be848bce50c4f3c884bc
     defaultValue: {fileID: 0}
-  prefabGameObject: {fileID: 180860, guid: 89fdb9fee1f1fe94cb02018221255e50, type: 3}
+  prefabGameObject: {fileID: 153256, guid: fe394d041df1a0547990f49cf653249f, type: 3}
   updateParticle: 1
   particleRandomSeed: 3676
   updateDirector: 1
