@@ -502,6 +502,18 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4868971019312080415, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868971019312080415, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868971019312080415, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868971019312080415, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -570,6 +582,42 @@ PrefabInstance:
     - target: {fileID: 162678278773768873, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: ScaleWiggleProperties.AmplitudeMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: ScaleWiggleProperties.AmplitudeMax.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: ScaleWiggleProperties.AmplitudeMax.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: PositionWiggleProperties.AmplitudeMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: PositionWiggleProperties.AmplitudeMax.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: PositionWiggleProperties.AmplitudeMax.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: RotationWiggleProperties.AmplitudeMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: RotationWiggleProperties.AmplitudeMax.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: RotationWiggleProperties.AmplitudeMax.z
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_RootOrder

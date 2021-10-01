@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TailPiecePickable : MonoBehaviour
 {
-	[SerializeField] Material _tailPieceMaterial;
+	[SerializeField] Renderer _tailPieceRenderer;
 
-	public Material GetMaterial => _tailPieceMaterial;
+	public Material GetMaterial => _tailPieceRenderer.material;
 }

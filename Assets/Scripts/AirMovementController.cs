@@ -6,7 +6,7 @@ public class AirMovementController : MonoBehaviour
 {
 	[SerializeField] Rigidbody _rigidbody;
 	[SerializeField] MovementDataSO movementDataSO;
-	[SerializeField] float _xMaxPos;
+	[SerializeField] GameConstraints _gameConstraints;
 	
 	float _lastFrameMousePosX;
 	float _valueToApply;
@@ -57,16 +57,20 @@ public class AirMovementController : MonoBehaviour
 	{
 		if (_shouldApplyForce)
 		{
-			_rigidbody.velocity = new Vector3(_valueToApply * movementDataSO.sideMoveSpeedMultiplier, _rigidbody.velocity.y, _rigidbody.velocity.z);
-				
+			var velocity = _rigidbody.velocity;
+			velocity = new Vector3(_valueToApply * movementDataSO.sideMoveSpeedMultiplier, velocity.y, velocity.z);
+
 			Vector3 nextPos = _rigidbody.position;
-			if (_rigidbody.position.x > _xMaxPos)
+			if (_rigidbody.position.x > _gameConstraints.playerMaxXPos)
 			{
-				nextPos.x = _xMaxPos;
-			}else if (_rigidbody.position.x < -_xMaxPos)
-			{
-				nextPos.x = -_xMaxPos;
+				nextPos.x = _gameConstraints.playerMaxXPos;
 			}
+			else if (_rigidbody.position.x < -_gameConstraints.playerMaxXPos)
+			{
+				nextPos.x = -_gameConstraints.playerMaxXPos;
+			}
+			
+			_rigidbody.velocity = velocity;
 			_rigidbody.MovePosition(nextPos);
 		}
 	}

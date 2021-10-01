@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/Sea 1.unity
+    guid: 1561f06707eb0624889bf3b094829aac
+  - enabled: 1
     path: Assets/_Scenes/Sea.unity
     guid: 5c64d135f1cb72542bae0389f71f1d73
   - enabled: 1
     path: Assets/_Scenes/Sky.unity
     guid: bd76ba35b03e2fc4bbb94ce2ac60a0cc
+  - enabled: 1
+    path: Assets/_Scenes/Sky 1.unity
+    guid: 4e3cbff489f54f24388c76498c7d0ea0
   - enabled: 1
     path: Assets/_Scenes/Land.unity
     guid: 6332135d238c5b846b2cb592ef908b37

@@ -76,7 +76,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6946487448899031673}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6946487447674604086
 MonoBehaviour:
@@ -141,7 +141,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6946487448899031673}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6946487448551064377
 MonoBehaviour:
@@ -155,60 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c927f25aca4470bf42c1cabcbc94cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6946487448821274788
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6946487448821274794}
-  - component: {fileID: 6946487448821274795}
-  m_Layer: 0
-  m_Name: Polyverse Skies
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6946487448821274794
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6946487448821274788}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6946487448899031673}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6946487448821274795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6946487448821274788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fdf5921ba9788546a0a1fb47a5f6f44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  styledBanner: 0
-  categoryScene: 0
-  sunDirection: {fileID: 0}
-  moonDirection: {fileID: 0}
-  categoryTime: 0
-  categoryTimeMessage: 1
-  skyboxDay: {fileID: 0}
-  skyboxNight: {fileID: 0}
-  timeOfDay: 0
-  updateLighting: 0
-  styledSpace0: 0
 --- !u!1 &6946487448899031674
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +184,6 @@ Transform:
   m_Children:
   - {fileID: 6946487447446903476}
   - {fileID: 6946487449253034036}
-  - {fileID: 6946487448821274794}
   - {fileID: 6946487447674604085}
   - {fileID: 6946487448551064378}
   m_Father: {fileID: 0}

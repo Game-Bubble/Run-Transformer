@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Lvl2 Movement Data
   m_EditorClassIdentifier: 
   sideMoveSpeedMultiplier: 10
-  forwardMoveSpeed: 35
+  forwardMoveSpeed: 50
   throwPower: 80

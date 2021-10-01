@@ -38,9 +38,9 @@ public class TailController : MonoBehaviour
 		_tailPiecePicker.TailPiecePicking -= OnTailPiecePicking;
 	}
 
-	void OnTailPiecePicking()
+	void OnTailPiecePicking(Material tailPieceMaterial)
 	{
-		SetupAndPlayTailFormingSequence();
+		SetupAndPlayTailFormingSequence(tailPieceMaterial);
 		_score.CurrentValue++;
 	}
 	
@@ -67,12 +67,13 @@ public class TailController : MonoBehaviour
 		}
 	}
 	
-	void SetupAndPlayTailFormingSequence()
+	void SetupAndPlayTailFormingSequence(Material tailPieceMaterial)
 	{
 		for (int i = 0; i < TailCount; i++)
 		{
 			if (!_tailPieces[i].gameObject.activeSelf)
 			{
+				_tailPieces[i].SetMaterial(tailPieceMaterial);
 				_tailPieces[i].gameObject.SetActive(true);
 				_tailPieces[i].PlayVFXSequence();
 				return;

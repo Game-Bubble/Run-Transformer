@@ -502,6 +502,18 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.86
       objectReference: {fileID: 0}
@@ -560,6 +572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7060112065604127937}
     m_Modifications:
+    - target: {fileID: 4868971019311625149, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
+      propertyPath: MinDistance
+      value: 11.238018
+      objectReference: {fileID: 0}
     - target: {fileID: 4868971019311915593, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
       propertyPath: m_Name
       value: ExplosionFireballFire Big Variant
@@ -574,11 +590,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4868971019312080415, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.08
+      value: 5.91
       objectReference: {fileID: 0}
     - target: {fileID: 4868971019312080415, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.64
+      value: 5.44
       objectReference: {fileID: 0}
     - target: {fileID: 4868971019312080415, guid: 47d9343ba7f07db48a483f9de80ec226, type: 3}
       propertyPath: m_LocalRotation.w
@@ -629,6 +645,18 @@ PrefabInstance:
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 5005722229349548540, guid: 52ad637b446a3a44db570919bd8e55ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -693,6 +721,42 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: cd2b1c76c84d56d4caca62651b0cc9fd, type: 3}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: ScaleWiggleProperties.AmplitudeMax.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: ScaleWiggleProperties.AmplitudeMax.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: ScaleWiggleProperties.AmplitudeMax.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: PositionWiggleProperties.AmplitudeMax.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: PositionWiggleProperties.AmplitudeMax.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: PositionWiggleProperties.AmplitudeMax.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: RotationWiggleProperties.AmplitudeMax.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: RotationWiggleProperties.AmplitudeMax.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 642295095918978675, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
+      propertyPath: RotationWiggleProperties.AmplitudeMax.z
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1868113693723604721, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: m_RootOrder
       value: 0

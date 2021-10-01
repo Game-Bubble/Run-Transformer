@@ -50,7 +50,8 @@ public class MovementController : MonoBehaviour
 			if (nextPos.x > _gameConstraints.playerMaxXPos)
 			{
 				nextPos.x = _gameConstraints.playerMaxXPos;
-			}else if (nextPos.x < -_gameConstraints.playerMaxXPos)
+			}
+			else if (nextPos.x < -_gameConstraints.playerMaxXPos)
 			{
 				nextPos.x = -_gameConstraints.playerMaxXPos;
 			}

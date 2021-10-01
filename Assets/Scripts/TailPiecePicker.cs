@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TailPiecePicker : MonoBehaviour
 {
-	public event Action TailPiecePicking;
+	public event Action<Material> TailPiecePicking;
 	
 	void OnTriggerEnter(Collider other)
 	{
@@ -11,7 +11,7 @@ public class TailPiecePicker : MonoBehaviour
 
 		if (tailPiecePickable)
 		{
-			TailPiecePicking?.Invoke();
+			TailPiecePicking?.Invoke(tailPiecePickable.GetMaterial);
 			
 			Destroy(other.gameObject);
 		}

@@ -9,7 +9,8 @@ public class TailPiece : MonoBehaviour
 	[SerializeField] PlayableDirector _playableDirector;
 	[SerializeField] TailPieceTimelineEventHandler _tailPieceTimelineEventHandler;
 	[SerializeField] GameObject _tailPieceWCollider;
-
+	[SerializeField] Renderer[] _tailPieceRenderers;
+	
 	int _index;
 
 	public void Initialize(int index)
@@ -29,5 +30,13 @@ public class TailPiece : MonoBehaviour
 	public void PlayVFXSequence()
 	{
 		_playableDirector.Play();
+	}
+
+	public void SetMaterial(Material tailPieceMaterial)
+	{
+		foreach (Renderer tailPieceRenderer in _tailPieceRenderers)
+		{
+			tailPieceRenderer.material = tailPieceMaterial;
+		}
 	}
 }
