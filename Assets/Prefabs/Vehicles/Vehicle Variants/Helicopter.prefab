@@ -507,7 +507,7 @@ PrefabInstance:
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _crashParticle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8501455096284093389}
     - target: {fileID: 7368012204114517588, guid: f57b2327dd6662945a61c45d3aaa9901, type: 3}
       propertyPath: _gameObjectsThatWillDeactivatedOnHit.Array.size
       value: 3
@@ -622,6 +622,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+--- !u!198 &8501455096284093389 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19849376, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+  m_PrefabInstance: {fileID: 8501455096265866093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9100823609763043809
 PrefabInstance:
   m_ObjectHideFlags: 0
